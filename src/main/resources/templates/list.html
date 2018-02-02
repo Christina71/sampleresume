@@ -23,7 +23,9 @@
         <td th:text="${myresume.skills}"></td>
 
         <td>
-            <a th:href = "@{/update/{id}(id=${myresume.id})}">Update</a>-
+            <a th:href = "@{/update/{id}(id=${myresume.id})}">Update education</a>-
+            <a th:href = "@{/update/{id}(id=${myresume.id})}">Update experience</a>-
+            <a th:href = "@{/update/{id}(id=${myresume.id})}">Update skills</a>-
             <a th:href = "@{/detail/{id}(id=${myresume.id})}">Details</a>-
             <a th:href = "@{/delete/{id}(id=${myresume.id})}">Delete</a>
 
@@ -31,8 +33,7 @@
     </tr>
     <!--<a href="/add">Add an education</a><br/>
     <a href="/add">Add an experience</a><br/>
-    <a href="/add">Add a skill</a><br/>
--->
+    <a href="/add">Add a skill</a><br/>-->
 </table>
 </body>
 </html>
