@@ -24,6 +24,8 @@ public class Myresume {
     @Size(min=2)
     private String education;
 
+
+
     @NotNull
     @Size(min=2)
     private String experience;
@@ -79,5 +81,6 @@ public class Myresume {
     public void setSkills(String skills) {
         this.skills = skills;
     }
+
 
 }

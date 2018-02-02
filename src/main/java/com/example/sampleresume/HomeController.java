@@ -35,6 +35,7 @@ public class HomeController {
         myresumeRepository.save(myresume);
         return "redirect:/";
     }
+        
     @RequestMapping("/detail/{id}")
     public String showMyresume(@PathVariable ("id") long id, Model model){
         model.addAttribute("myresume", myresumeRepository.findOne(id));

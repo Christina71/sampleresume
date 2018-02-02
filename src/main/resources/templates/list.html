@@ -10,11 +10,18 @@
     <tr>
         <th>Name</th>
         <th>Email</th>
+        <th>Education</th>
+        <th>Experience</th>
+        <th>Skills</th>
         <td>Actions</td>
     </tr>
     <tr th:each="myresume:${myresumes}">
         <td th:text="${myresume.name}"></td>
         <td th:text="${myresume.email}"></td>
+        <td th:text="${myresume.education}"></td>
+        <td th:text="${myresume.experience}"></td>
+        <td th:text="${myresume.skills}"></td>
+
         <td>
             <a th:href = "@{/update/{id}(id=${myresume.id})}">Update</a>-
             <a th:href = "@{/detail/{id}(id=${myresume.id})}">Details</a>
