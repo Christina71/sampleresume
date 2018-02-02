@@ -2,15 +2,15 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Title</title>
+    <title>Resume</title>
 </head>
 <body>
-<a href="/"> Show all Resumes</a><br/>
-Name:<span th:text="${myresume.name}"></span><br/>
-Email:<span th:text="${myresume.email}"></span><br/>
-Education:<p th:text ="${myresume.education}"></p>
-Experience:<p th:text ="${myresume.experience}"></p>
-Skills:<p th:text ="${myresume.skills}"></p>
-<a th:href="@{/delete/{id}(id=${myresume.id})}" > Delete this resume </a>
+
+<span th:text="${myresume.name}"></span><br/>
+<span th:text="${myresume.email}"></span><br/>
+Education<p th:text ="${myresume.education}"></p>
+Experience<p th:text ="${myresume.experience}"></p>
+Skills<p th:text ="${myresume.skills}"></p>
+
 </body>
 </html>

@@ -2,10 +2,10 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Title</title>
+    <title>Resume</title>
 </head>
 <body>
-<a href = "/add"> Add a resume</a>
+
 <table>
     <tr>
         <th>Name</th>
@@ -16,9 +16,9 @@
         <td th:text="${myresume.name}"></td>
         <td th:text="${myresume.email}"></td>
         <td>
-            <a th:href = "@{/update/{id}(id=${myresume.id})}">Update</a>-
-            <a th:href = "@{/detail/{id}(id=${myresume.id})}">Details</a>-
-            <a th:href = "@{/delete/{id}(id=${myresume.id})}">Delete</a>
+
+            <a th:href = "@{/detail/{id}(id=${myresume.id})}">Details</a>
+
         </td>
     </tr>
 </table>
