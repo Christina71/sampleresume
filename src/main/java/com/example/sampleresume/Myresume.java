@@ -25,7 +25,6 @@ public class Myresume {
     private String education;
 
 
-
     @NotNull
     @Size(min=2)
     private String experience;

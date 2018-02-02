@@ -35,7 +35,7 @@ public class HomeController {
         myresumeRepository.save(myresume);
         return "redirect:/";
     }
-        
+
     @RequestMapping("/detail/{id}")
     public String showMyresume(@PathVariable ("id") long id, Model model){
         model.addAttribute("myresume", myresumeRepository.findOne(id));
@@ -47,9 +47,9 @@ public class HomeController {
         return "myresumeform";
 
     }
-    /*@RequestMapping("/delete/{id}")
+    @RequestMapping("/delete/{id}")
     public String delMyresume(@PathVariable ("id") long id){
        myresumeRepository.delete(id);
         return "redirect:/";
-    }*/
+    }
 }
