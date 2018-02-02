@@ -40,13 +40,13 @@ public class HomeController {
         model.addAttribute("myresume", myresumeRepository.findOne(id));
         return "show";
     }
-    /*@RequestMapping("/update/{id}")
+    @RequestMapping("/update/{id}")
     public String updateMyresume(@PathVariable ("id") long id, Model model){
         model.addAttribute("myresume", myresumeRepository.findOne(id));
         return "myresumeform";
 
     }
-    @RequestMapping("/delete/{id}")
+    /*@RequestMapping("/delete/{id}")
     public String delMyresume(@PathVariable ("id") long id){
        myresumeRepository.delete(id);
         return "redirect:/";

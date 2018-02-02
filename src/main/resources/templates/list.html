@@ -16,7 +16,7 @@
         <td th:text="${myresume.name}"></td>
         <td th:text="${myresume.email}"></td>
         <td>
-
+            <a th:href = "@{/update/{id}(id=${myresume.id})}">Update</a>-
             <a th:href = "@{/detail/{id}(id=${myresume.id})}">Details</a>
 
         </td>
